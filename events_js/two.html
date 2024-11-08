@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello ajay</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+   const  heyajay = function(){
+    console.log("hello");
+   }
+    
+   
+    const change =  function(){
+        document.querySelector('h1').innerHTML= "ajay hello"
+}
+
+   const changeME =  setTimeout(change,2000)
+   document.querySelector('#stop').addEventListener('click' , function () {
+    clearInterval(changeME);
+    console.log("change");
+    
+    
+   })
+</script>
+</html>
